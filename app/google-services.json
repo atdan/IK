@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "508583245842",
+    "firebase_url": "https://ik-project-6a4f8.firebaseio.com",
+    "project_id": "ik-project-6a4f8",
+    "storage_bucket": "ik-project-6a4f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508583245842:android:8839ab7db21b3518",
+        "android_client_info": {
+          "package_name": "com.example.root.chatdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508583245842-u2dnq1n581upr3d7gec9dnpebqrb58hl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.chatdemo",
+            "certificate_hash": "f6c8862c0b558b9ce56d9e1359d047263812713a"
+          }
+        },
+        {
+          "client_id": "508583245842-2t0appecav6bmq3cot17e8dkcuqp1jbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA07SW7ORbZKXWTbm73DL2pAks7FTe2aDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508583245842-2t0appecav6bmq3cot17e8dkcuqp1jbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508583245842:android:c4f8c3366e794812",
+        "android_client_info": {
+          "package_name": "com.example.root.ik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508583245842-hd52cu2dk6pv41ek4cri41ag9ibdk421.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.ik",
+            "certificate_hash": "f6c8862c0b558b9ce56d9e1359d047263812713a"
+          }
+        },
+        {
+          "client_id": "508583245842-2t0appecav6bmq3cot17e8dkcuqp1jbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA07SW7ORbZKXWTbm73DL2pAks7FTe2aDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508583245842-2t0appecav6bmq3cot17e8dkcuqp1jbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508583245842:android:77ffc8ee83902aaf",
+        "android_client_info": {
+          "package_name": "com.example.root.ikproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508583245842-q00v68arvv92gk83lu0g6mlbg8g8n2h2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.ikproject",
+            "certificate_hash": "f6c8862c0b558b9ce56d9e1359d047263812713a"
+          }
+        },
+        {
+          "client_id": "508583245842-2t0appecav6bmq3cot17e8dkcuqp1jbv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA07SW7ORbZKXWTbm73DL2pAks7FTe2aDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508583245842-2t0appecav6bmq3cot17e8dkcuqp1jbv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

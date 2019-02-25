@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_1_1"/>
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:padding="2dp"
+                android:paddingStart="6dp"
+                android:layout_margin="4dp"
+                android:id="@+id/edtEmail"
+                android:hint="email"
+                app:met_floatingLabelTextSize="15sp"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:inputType="textEmailAddress"
+                android:textSize="28sp"
+                app:met_baseColor="@color/primary_dark"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimaryDark"
+                app:met_singleLineEllipsis="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPassword"
+                android:padding="2dp"
+                android:paddingStart="6dp"
+                android:hint="Password"
+                android:layout_margin="4dp"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textPassword"
+                android:textSize="28sp"
+                app:met_baseColor="@color/primary_dark"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="11"
+                app:met_primaryColor="@color/primary_dark"
+                app:met_singleLineEllipsis="true"
+                 />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+            <com.rey.material.widget.CheckBox
+                android:layout_weight="1"
+                android:id="@+id/ckbRememberMe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                style="@style/Material.Drawable.CheckBox"
+                android:text="Remember Me"
+
+                android:textColor="#000"
+                app:cbd_strokeColor="@color/primary"
+                app:cbd_tickColor="@color/gen_white"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_dark"
+                android:layout_weight="1"
+                android:text="@string/forgot_password"
+                android:id="@+id/txtForgotPassword"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an acount? "
+                android:textSize="16sp"
+
+                android:textColor="@color/gen_black"/>
+
+            <TextView
+                android:id="@+id/signUpAct"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Sign Up"
+                android:textSize="16sp"
+                android:layout_marginEnd="2dp"
+                android:textColor="@color/primary_dark"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:id="@+id/btn_signIn_activity"
+        android:textColor="@android:color/white"
+        android:background="@color/btnSignActive"
+        android:shadowColor="@android:color/black"
+        android:text="Sign In"
+        android:textAllCaps="true"
+        android:textColorHint="@android:color/white"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

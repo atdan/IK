@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginBottom="4dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:outlineAmbientShadowColor="@color/grey"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/colorAccent"
+        android:gravity="start"
+        style="@style/CustomTheme"
+        android:background="@color/gen_white">
+
+        <TextView
+            android:textColor="@color/primary"
+            android:id="@+id/category_text"
+            android:textSize="21sp"
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search"
+                android:src="@drawable/ic_search_black_24dp"
+                android:padding="8dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/view_profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/profile"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginEnd="15dp"
+                android:onClick="viewProfile"/>
+
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.mancj.materialsearchbar.MaterialSearchBar
+                android:id="@+id/searchBar"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                app:mt_roundedSearchBarEnabled="true"
+                android:scrollbars="vertical"
+                android:layout_alignParentTop="true"
+                app:mt_speechMode="false"
+                android:visibility="gone"
+                app:mt_hint="Enter your food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="16dp"
+                android:layout_below="@id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_category_list"
+                android:scrollbars="vertical"/>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/swipe_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="32dp"
+            android:layout_centerHorizontal="true"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayoutHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsing"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:contentScrim="#0e0d0e"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    >
+                    <ss.com.bannerslider.Slider
+                        android:id="@+id/banner_slider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center|fill"
+                        app:slider_animateIndicators="true"
+                        app:slider_interval="3000"
+                        app:slider_loopSlides="true" />
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+                <TextView
+                    android:id="@+id/recentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/searchBar"
+                    android:padding="6dp"
+                    android:text="Recent Uploads"
+                    android:textColor="#000"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <com.mancj.materialsearchbar.MaterialSearchBar
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/collapsing"
+                    android:layout_marginBottom="8dp"
+                    android:outlineAmbientShadowColor="@color/grey"
+                    android:padding="4dp"
+                    android:scrollbars="vertical"
+                    app:mt_hint="What do you need?"
+                    app:mt_hintColor="@color/colorPrimary"
+                    app:mt_roundedSearchBarEnabled="true"
+                    app:mt_speechMode="false" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/recentText"
+                    android:layout_marginTop="8dp"
+                    android:scrollbars="vertical">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

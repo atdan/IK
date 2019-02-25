@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cart_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_item_name"
+                android:gravity="center_vertical|start"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:text="Food 0!"
+
+                />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_item_price"
+                android:gravity="center_vertical|start"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:text="10,000"
+
+                />
+        </LinearLayout>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_quantity_cart"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            app:textSize="8sp"
+            app:backGroundColor="@color/colorAccent"
+            app:initialNumber="1"
+            app:finalNumber="20">
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
